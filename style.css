@@ -1,0 +1,197 @@
+/*  import google fonts.  */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Nunito:wght@300&display=swap');
+
+/*  animate background color.  */
+
+@keyframes bodyani{
+  from {background-color: gray}
+  to {background-color: black;}
+}
+
+/* 
+assign custom cursor, assign properties & values for background animation (name, duration, direction, iteration-count).  
+*/
+
+body {
+  cursor: url(Assets/img/GA.png), auto;
+  background-color: gray;
+  color: whitesmoke;
+  animation-name: bodyani;
+  animation-duration: 10s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+
+/*  center image, style with colored border.  */
+
+img {
+  border-style: dashed;
+  border-color: #00fa9a;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+/*  
+style nav bar to be centered and displayed inline with proper padding.
+*/
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+  padding-right: 30px;
+}
+
+nav li {
+  display: inline;
+  padding: 20px;
+}
+
+/*  
+style nav bar link pseudo-classes with color and text decoration. 
+
+**NOTE FOR GRADER** 
+I organized the pseudo-class rules in the proper order, yet on the live server the colors seem to not reset or display properly at times. If you have a solution, or any helpful feedback on how to do this better, please make a note on that! Thank you :)
+*/
+
+nav a:link, #contact-links a:link {
+  text-decoration: none;
+  color: #00fa9a;
+}
+
+nav a:visited, #contact-links a:visited {
+  text-decoration: none;
+  color: #bb50e2;
+}
+
+nav a:hover, #contact-links a:hover {
+  text-decoration: underline;
+  color: #00dbcd;
+}
+
+nav a:active, #contact-links a:active {
+  text-decoration: underline;
+  color: #96fdec00;
+}
+
+/*  
+set background image, assign position to center, and size to cover.
+*/
+
+header {
+  background-image: url(Assets/img/Northern-Lights.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+/*  
+style h1 with proper margins/padding, center text, and assign google font and adjust font size.
+*/
+
+header h1 {
+  margin-top: 0px;
+  padding-top: 30px;
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-size: 60px;
+}
+
+/*  style h2 with Arial font, center text and proper padding between h2 and hr  */
+
+header h2 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 20px;
+}
+
+main {
+  margin: auto;
+}
+
+/* 
+style margin property:values of article containers and hr's to display more centered. 
+
+**NOTE FOR GRADER**
+I figured this would be the easiest way to center all of the containers and hr elements, and make them appear more organized and flush with the page. I did notice, however, that in the Webview on Replit, the formatting seems to be all over the place, but on a live server webpage it appears to be fine. Please leave any feedback on how to possibly do this better! Thank you :)
+*/
+
+article, .body-hr {
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+/*  
+style article divs:
+  . topic id's need to be centered
+  . content id's need to be aligned left
+  . assign proper padding to be visually appealing
+*/
+
+#intro-greeting {
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  padding-top: 20px;
+}
+
+#intro-section {
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+#about-me {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+#about-content {
+  padding-bottom: 20px;
+}
+
+#contact-me {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+#contact-links p {
+  text-align: center;
+}
+
+/*  
+set some space between contact links and footer with padding. 
+*/
+
+#contact-links {
+  padding-bottom: 30px;
+}
+
+/*  
+set footer height to appropriate size, align text to center, set background image (url, size:cover, position:center), set opacity to 70 for a little transparency.
+*/
+
+footer {
+  height: 50px;
+  text-align: center;
+  background-image: url(Assets/img/dark-water.png);
+  background-size: cover;
+  background-position: center;
+  opacity: 70%;
+}
+
+/*  
+style copyright text to be centered, and with proper padding.
+*/
+
+footer h5{
+  padding-top: 20px;
+}

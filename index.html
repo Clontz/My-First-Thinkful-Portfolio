@@ -1,83 +1,97 @@
 <!DOCTYPE html>
 <html>
 
+  <!--  head container: set meta tags, title, link css  -->
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
+  <title>My-First-Portfolio</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
-
-  <style type = "text/css">
-
-    .customcursor {
-      cursor: url(Assets/css/img/GA.png) auto;
-    }
-
-  @keyframes bodyani{
-    from {background-color: gray}
-    to {background-color: black;}
-  }
-    
-  body {
-    background-color: gray;
-    color: whitesmoke;
-    animation-name: bodyani;
-    animation-duration: 10s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-    cursor: url(Assets/css/img/GA.png), auto;
-    }
-  img {
-    border-style: dashed;
-    border-color: #00fa9a;
-  }
-  h1 {
-    text-align: center;
-    font-family: Copperplate, Papyrus, fantasy;
-  }
-  h2 {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    
-  }
-    </style>
-  
 </head>
+
 <body>
+<!--  header container: h1 for name, h2 for title  -->
+  <header>          
+      <h1> Isaac Cloninger </h1>
+      <h2> Software Developer </h2>
+      <hr>
+   </header>
+<!--  nav container: unordered list ".navbar", assign links to "about me" and "contact me" sections  -->
+  <nav>
+    <ul class = "navbar">
+      <li>
+        <a href="#about-me">About Me</a>
+      </li>
+      <li>
+        <a href="#contact-me">Contact Me</a>
+      </li>
+    </ul>
+  </nav>
 
-  <div>
-  <h1> 
+  <hr>
   
-    Isaac Cloninger 
-  
-  </h1>
-  <h2>Software Developer</h2>
-    <hr />
-    <p> My <em> Favorite </em> thing about programming is the infinite possibilities</p>
-    <h3>About Me</h3>
-  
-   <img 
-src="Assets/css/img/Cat.jpg"
-     width = "500"
-     height = "350"
-    >
-
-<p> Lorem ipsum dolor sit amet, movet vidisse partiendo sea ut, sed ei posidonium signiferumque, tincidunt reprimique eam no. Ei corpora ponderum praesent ius, cum in nibh noster definitionem. Ut utroque imperdiet nam, stet ridens graeci ne sea, ea solum inciderint has. Nec laudem nominati ad, cu posse solet mollis usu. Vim posse disputando consequuntur at.
-
-        Et sint tantas facilisi vim. At harum exerci lobortis eos, eros homero assentior nam eu. An tation decore equidem vix, at nam omittam sensibus. Eu quas veniam cum, et consequat constituam sit. His cu dicat minim accumsan, et usu consequat intellegam.
-</p>
-<h3>My Projects</h3>
-    <ul>
-<li>Project 1</li>
-<li>Project 2</li>
-      <li>Project 3</li>
-       </ul>
-    <h3>Contact Me</h3>
-    <p><strong>Phone: </strong>(919) 903-6902</p>
-    <p><strong>Email: </strong>
-      <a href="mailto:Isaac@gmail.com"> Isaac@gmail.com </a></p>
+  <main>
+<!--  
+article container: set img element, set separate divs for greeting and intro. 
+-->
+    <article>
+      <img src="Assets/img/Cat.jpg" width="500" height="350">
+      <div id = "intro-greeting">
+        <h2>Hello! I'm Isaac Cloninger</h2>
+      </div>
+      <div id = "intro-section">
+        <p>
+          I am a software developer located in Raleigh, NC.
+        </p>
+      </div>
+    </article>
     
-  </div>
+<!--  set hr class for hr's in body container  -->
+    <hr class="body-hr">
+    
+<!--  article container: set div container for title "About Me", set div container for paragraph elements.  -->
+    <article>
+      <div id="about-me">
+        <h3>About Me</h3>
+      </div>
+      <div id="about-content">
+        <p>Ever since I was 3 years old, I have been working and playing with computers. I've always been fascinated by the vast capabilities of computers, the internet, and the software it utilizes. I took a class in high school, where I briefly learned how to code in C++, where we designed various functional programs and games. Once I got a taste of what being a software developer was like, I was hooked. After I graduated high school, I mainly focused on working in restaurants so I could learn how to properly work and collaborate with my team members. Now I can take that 10 years of experience in that field, and apply it to my dream career of being a software developer. I'm excited to work with other like-minded individuals, and develop some truly amazing software!
+        </p>
+        <p>
+          Aside from software development, I also have hobbies like making music, riding my longboard on nature trails, and discovering new and interesting places.
+        </p>
+      </div>
+    </article>
+
+    <hr class="body-hr">
+
+<!--  
+article container: set div container for title "Contact Me", set div container for links (put links in <p> containers to separate them, make the link's text <strong>).
+-->
+    <article>
+      <div id="contact-me">
+        <h3>Contact Me</h3>
+      </div>
+      <div id="contact-links">
+        <p>
+          <a href="https://www.linkedin.com/in/isaac-cloninger-210726157/"  target="_blank"><strong>LinkedIn</strong></a>
+        </p>
+        <p>
+          <a href="https://github.com/Clontz" target="_blank"><strong>GitHub</strong></a>
+        </p>
+        <p><strong>Email: </strong>
+          <a href="mailto:ijcloninger@gmail.com" target="_blank">ijcloninger@gmail.com</a>
+        </p>
+      </div>
+    </article>
+  </main>
+<!--  
+footer container: set <h5> element with copyright symbol and full name.
+-->
+  <footer>
+      <h5>&copy; Isaac Cloninger</h5>
+  </footer>
+
 </body>
 
 </html>
